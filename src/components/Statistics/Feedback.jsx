@@ -38,9 +38,9 @@ class Statistics extends React.Component {
                 <div>
                     <h2 className={css.title}>Statistics</h2>
 
-                    <p>Good: {this.state.good}</p>
-                    <p>Neutral: {this.state.neutral}</p>
-                    <p>Bad: {this.state.bad}</p>
+                    <p className={css.item}>Good: {this.state.good}</p>
+                    <p className={css.item}>Neutral: {this.state.neutral}</p>
+                    <p className={css.item}>Bad: {this.state.bad}</p>
                 </div>
             </div>
         )
