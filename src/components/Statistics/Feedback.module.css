@@ -1,3 +1,20 @@
+.feedback {
+    background-color: bisque;
+}
+
+.title {
+    text-align: start;
+    font-size: 40px;
+}
+
 .btn {
-    color: rgb(17, 17, 109);
+    margin-right: 15px;
+    font-size: 25px;
+    border-radius: 4px;
+}
+
+.item {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
 }
