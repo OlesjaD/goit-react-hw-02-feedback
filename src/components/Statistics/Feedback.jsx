@@ -7,12 +7,22 @@ class Statistics extends React.Component {
         bad: 0
     };
 
-    handleIncrement = () => {
+    handleSelectionG = () => {
         this.setState(prevState => ({
-                good: prevState.good +1,
-                neutral: prevState.neutral +1,
-                bad: prevState.bad +1
+                good: prevState.good +1
             }))
+    };
+
+    handleSelectionN = () => {
+        this.setState(prevState => ({
+                neutral: prevState.neutral +1,
+            }))
+    };
+
+    handleSelectionB = () => {
+        this.setState(prevState => ({
+            bad: prevState.bad +1
+        }))
     };
     
     render () {
@@ -20,9 +30,9 @@ class Statistics extends React.Component {
             <div>
                 <h2>Please leave feedback</h2>
 
-                    <button type="button" onClick = {this.handleIncrement}>Good</button>
-                    <button type="button" onClick = {this.handleIncrement}>Neutral</button>
-                    <button type="button" onClick = {this.handleIncrement}>Bad</button>
+                    <button type="button" onClick = {this.handleSelectionG}>Good</button>
+                    <button type="button" onClick = {this.handleSelectionN}>Neutral</button>
+                    <button type="button" onClick = {this.handleSelectionB}>Bad</button>
 
                 <div>
                     <h2>Statistics</h2>
